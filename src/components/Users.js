@@ -56,7 +56,7 @@ function Users() {
                 }
                 {Array.from({ length: pages }, (value, index) => index + 1).map(
                     (each) => (
-                        <button className="num-btn" onClick={() => setPage(each)}>{each}</button>
+                        <button className="num-btn" onClick={() => setPage(each)} disabled={page === each}>{each}</button>
                     )
                 )}
                 {
